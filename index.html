@@ -1,0 +1,142 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>코딩네컷</title>
+    <style>
+              /* 이서윤체 폰트 적용을 위한 코드 */
+      @font-face {
+        font-family: "LeeSeoyun";
+        src: url("https://cdn.jsdelivr.net/gh/projectnoonnu/noonfonts_2202-2@1.0/LeeSeoyun.woff")
+          format("woff");
+        font-weight: normal;
+        font-style: normal;
+      }
+      /* body태그 자체에 css 요소 부여 */
+body {
+	font-family: "LeeSeoyun";
+	margin: 0;
+	display: flex;
+	justify-content: center;
+	background-image: url("./background.png");
+}
+
+.container{
+    width: 680px;
+    background-image: url(./background.jpg);
+    background-size: cover;
+    height: 1100px; 
+}
+
+.photos{
+    margin-top: 30px;
+    display: grid;
+    grid-template-columns: 320px 320px;
+    grid-row: auto auto;
+    margin: -15px 10px;
+    justify-content: space-between;
+}
+
+.photo-frame{
+    background-color: white;
+    margin:15px 15px;
+    height: 400px;
+    background-size: cover;
+    position: relative;
+}
+
+.top{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+.t-title{
+    color: white;
+    font-size: 40px;
+    font-weight: 900px;
+}
+
+.footer{
+    margin: 10px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+.f-title{
+    color: white;
+    font-size: 30px;
+    font-weight: 900px;
+
+}
+.f-date{
+    margin: 0px;
+    color: white;
+    font-size: 20px;
+    font-weight: 500px;
+
+}
+
+#image1{
+    background-image: url('./KakaoTalk_20230214_000334397.jpg');
+}
+#image2{
+    background-image: url('./KakaoTalk_20230214_000334397_01.jpg');
+}
+#image3{
+    background-image: url('./KakaoTalk_20230214_000334397_02.jpg');
+}
+#image4{
+    background-image: url('./KakaoTalk_20230214_000334397_03.jpg');
+}
+
+.photo_description{
+    color: white;
+    background-color: black;
+    width: fit-content ;
+    padding: 0 20px;
+    margin-bottom: 10px;
+    border-radius: 10px;
+    position: absolute;
+    bottom: 0;
+    transform: translate(-50%);
+    left: 50%;
+}
+    </style>
+</head>
+<body>
+    <div class = "container">
+        <div class = "top">
+            <p class = "t-title"> 000000 </p>
+    <div class = "photos">
+        <div id="image1" class ="photo-frame">
+            <span id="desc1" class = "photo_description">
+                 000
+            </span>
+        </div>
+        <div id="image2" class ="photo-frame">
+            <span id="desc1" class = "photo_description">
+                000
+           </span>
+        </div>
+        <div id="image3" class ="photo-frame">
+            <span id="desc1" class = "photo_description">
+                000
+           </span>
+        </div>
+        <div id="image4" class ="photo-frame">
+            <span id="desc1" class = "photo_description">
+                000
+           </span>
+        </div>
+    </div>
+    </div>
+    <div class ="footer">
+        <p class="f-title">000000</p>
+        <p class="f-date">0000</p>
+    </div>
+</div>
+</body>
+</html>
